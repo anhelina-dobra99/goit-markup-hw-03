@@ -1,0 +1,137 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #fff;
+}
+a {
+  color: #2e2f42;
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.logo-accent {
+  color: #2e2f42;
+}
+.menu-nav-item {
+  color: #2e2f42;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.menu-nav-item:hover,
+.menu-nav-item:focus {
+  color: #404bbf;
+}
+.item-accent:active {
+  color: #404bbf;
+  text-decoration: underline;
+}
+.contacts {
+  font-style: normal;
+}
+.contact-item {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.contact-item:hover,
+.contact-item:focus {
+  color: #404bbf;
+}
+.hero-image {
+  background-color: #2e2f42;
+}
+.page-header {
+  color: #fff;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.order-button {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: #4d5ae5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.order-button:hover,
+.order-button:focus,
+.order-button:active {
+  background-color: #404bbf;
+}
+.section-header {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+.feature {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.feature-dscpr {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.team-section {
+  background-color: #f4f4fd;
+}
+.team-member-card {
+  background-color: #ffffff;
+}
+.team-member-name {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.team-member-occupation {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.service {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.service-type {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.page-footer {
+  background-color: #2e2f42;
+}
+.footer-logo-accent {
+  color: #f4f4fd;
+}
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
