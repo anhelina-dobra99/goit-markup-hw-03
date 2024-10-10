@@ -3,12 +3,54 @@ body {
   color: #434455;
   background-color: #fff;
 }
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 a {
   color: #2e2f42;
   text-decoration: none;
 }
 ul li {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 141px;
+  margin-right: 141px;
+}
+.header {
+  padding: 24px 156px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+.menu-nav-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -39,6 +81,10 @@ ul li {
 .contacts {
   font-style: normal;
 }
+.contact-list {
+  display: flex;
+  gap: 40px;
+}
 .contact-item {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -48,8 +94,17 @@ ul li {
 .contact-item:focus {
   color: #404bbf;
 }
+.hero-image .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
 .hero-image {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .page-header {
   color: #fff;
@@ -68,11 +123,24 @@ ul li {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .order-button:hover,
 .order-button:focus,
 .order-button:active {
   background-color: #404bbf;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+section .container {
+  min-width: 1158px;
 }
 .section-header {
   color: #2e2f42;
@@ -82,6 +150,21 @@ ul li {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+}
+.feature-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+.feature-list-item {
+  flex-basis: calc((100% - (3 * 24px)) / 4);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
 }
 .feature {
   color: #2e2f42;
@@ -94,11 +177,36 @@ ul li {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.team-section {
+.team-section .container {
   background-color: #f4f4fd;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 .team-member-card {
   background-color: #ffffff;
+  flex-basis: calc((100% - (3 * 24px)) / 4);
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 .team-member-name {
   color: #2e2f42;
@@ -107,6 +215,34 @@ ul li {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+}
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+  padding: 0px 0px 32px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
 }
 .team-member-occupation {
   line-height: 1.5;
@@ -126,11 +262,20 @@ ul li {
 }
 .page-footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.page-footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
 }
 .footer-logo-accent {
   color: #f4f4fd;
 }
 .footer-text {
+  flex-basis: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
