@@ -27,18 +27,11 @@ img {
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 141px;
-  margin-right: 141px;
+  margin: o auto;
 }
 .header {
   padding: 24px 156px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-.header .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  border-bottom: 1px solid #e7e9fc;
 }
 .nav {
   display: flex;
@@ -60,6 +53,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .logo-accent {
   color: #2e2f42;
@@ -69,6 +63,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 .menu-nav-item:hover,
 .menu-nav-item:focus {
@@ -113,6 +108,7 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  max-width: 496px;
 }
 .order-button {
   font-family: "Roboto", sans-serif;
@@ -125,10 +121,10 @@ img {
   cursor: pointer;
   padding: 16px 32px;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 .order-button:hover,
 .order-button:focus,
@@ -142,7 +138,7 @@ img {
 section .container {
   min-width: 1158px;
 }
-.section-header {
+.visually-hidden {
   color: #2e2f42;
   font-weight: 500;
   font-size: 36px;
@@ -159,12 +155,7 @@ section .container {
   gap: 24px;
 }
 .feature-list-item {
-  flex-basis: calc((100% - (3 * 24px)) / 4);
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 8px;
+  width: calc((100% - 72px) / 4);
 }
 .feature {
   color: #2e2f42;
@@ -172,16 +163,28 @@ section .container {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .feature-dscpr {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.team-section .container {
-  background-color: #f4f4fd;
-  flex-direction: column;
+.team-section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.team-section .container {
+  background-color: #f4f4fd;
+}
+.section-header {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .card-list {
   display: flex;
@@ -192,27 +195,24 @@ section .container {
 }
 .team-member-card {
   background-color: #ffffff;
-  flex-basis: calc((100% - (3 * 24px)) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 32px;
 }
 .card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+  padding: 32px 0;
 }
 .team-member-name {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.team-member-occupation {
+  line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
 }
@@ -224,7 +224,6 @@ section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 72px;
 }
 .portfolio-list {
   display: flex;
@@ -236,7 +235,7 @@ section .container {
   column-gap: 24px;
 }
 .portfolio-item {
-  flex-basis: calc((100% - 2 * 24px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
   padding: 0px 0px 32px 0px;
   display: flex;
   align-items: center;
@@ -244,10 +243,10 @@ section .container {
   flex-direction: column;
   gap: 32px;
 }
-.team-member-occupation {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
+.item-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .service {
   color: #2e2f42;
@@ -255,6 +254,7 @@ section .container {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .service-type {
   line-height: 1.5;
@@ -274,8 +274,12 @@ section .container {
 .footer-logo-accent {
   color: #f4f4fd;
 }
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer-text {
-  flex-basis: 264px;
+  max-width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
